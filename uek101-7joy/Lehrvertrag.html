@@ -21,22 +21,35 @@
                 background-color: #b2d0dd;
                 display: flex;
                 gap: 15px;
+                width: 450px;
             }
             .ferien-feld {
+                position: relative;
                 background-color: #b2d0dd;
-                padding: 26px;
+                padding: 11px;
                 margin: -20px;
-                width: 150px;
+                width: 200px;
+                height: 30px;
                 display: flex;
                 align-items: center;
                 color: #2b7da1;
             }
             .ferien-feld input {
                 width: 100%;
+                height: 30px;
                 border: none;
                 outline: none;
                 color: #2b7da1;
                 font-size: 1em;
+                box-sizing: border-box;
+            }
+            .nummer {
+                position: absolute;
+                bottom: 10px;
+                left: 15px;
+                font-size: 1em;
+                color: #2b7da1;
+                z-index: 2;
             }
             p {
                 font-family: Quicksand;
@@ -51,10 +64,24 @@
                 display: flex;
                 gap: 10px;
             }
+            .unten {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-family: Quicksand;
+            }
+            .unten {
+                padding: 10px 4px;
+                background-color: white
+            }
+            input {
+                padding-left: 40px;
+                padding-top: 15px;
+                font-size: 1em;
+                font-family: Arial, Helvetica, sans-serif;
+            }
             
             </style>
-            </head>
-
     <body>
         <div class="oben">
             <header>9. Ferien</header>
@@ -64,16 +91,46 @@
         </div>
 
         <div class="ferien-feld">
-            <input type="text" placeholder="1.">
-        </div>
+            <span class="nummer">1.</span>
+            <input type="text"></div>
+
         <div class="ferien-feld">
-            <input type="text" placeholder="2.">
-        </div>
+            <span class="nummer">2.</span>
+            <input type="text"></div>
+
         <div class="ferien-feld">
-            <input type="text" placeholder="3.">
-        </div>
+            <span class="nummer">3.</span>
+            <input type="text"></div>
+
         <div class="ferien-feld">
-            <input type="text" placeholder="4.">
+            <span class="nummer">4.</span>
+            <input type="text"></div>
+            </div>
+            <br>
+
+
+        <div class="unten">
+            <header>9. Ferien</header>
+
+            <div class="ferien-boxen">
+                <p>Ferienanspruch in Wochen pro Bildungsjahr</p>
+            </div>
+
+            <div class="ferien-feld">
+                <span class="nummer">1.</span>
+                <input type="text" value="30 Tage"></div>
+
+                <div class="ferien-feld">
+                    <span class="nummer">2.</span>
+                    <input type="text" value="25 Tage"></div>
+
+                    <div class="ferien-feld">
+                        <span class="nummer">3.</span>
+                    <input type="text" value="25 Tage"></div>
+
+                    <div class="ferien-feld">
+                        <span class="nummer">4.</span>
+                    <input type="text" value="25 Tage"></div>
         </div>
-    </body>
+        </body>
 </html>

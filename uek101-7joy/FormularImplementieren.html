@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Formular implementiern</title>
+        <style>
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+        <legend>Anrede:
+        <label for="herr">Herr</label>
+        <input type="radio" id="herr" name="Herr" value="herr">
+        <label for="frau">Frau</label>
+        <input type="radio" id="frau" name="Frau" value="frau">
+        </legend><br>
+
+        <label for="Vorname">Vorname:</label>
+        <input type="text" id="name" name="name" autofocus placeholder="Max"></input><br>
+        <label for="Nachname">Nachname:</label>
+        <input type="text" id="name" name="name" placeholder="Muster"></input><br>
+
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" min="tt.mm.jjjj"></input><br>
+
+        <label for="strasse">Strasse:</label>
+        <input type="text" id="strasse" name="strasse" placeholder="Musterstrasse 12"></input><br>
+
+        <label for="plz">PLZ:</label>
+        <input type="text" id="plz" name="plz" placeholder="8320"></input>
+        <label for="ort">Ort:</label>
+        <input type="text" id="ort" name="ort" placeholder="Fehraltorf"></input><br>
+
+        Land:
+        <select name="country-names" id="country-names">
+        <option value="wählen">Wählen Sie ein Land aus</option>
+        <option value="schweiz">Schweiz</option>
+        <option value="deutschland">Deutschland</option>
+        <option value="österreich">Österreich</option>
+        <option value="frankreich">Frankreich</option>
+        <option value="italien">Italien</option>
+        <option value="anderes">Anderes Land</option>
+        </select>
+        </p>
+    </body>
+</html>
