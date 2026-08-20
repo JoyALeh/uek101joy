@@ -1,48 +1,102 @@
-<html>
-    <head>
-        <title>Formular implementiern</title>
-        <style>
-            p {
+<doctype html>
+    <html lang="de">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Formular implementiert</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            <style>
+
+            .text {
                 font-family: Arial, Helvetica, sans-serif;
                 color: black;
             }
-        </style>
-    </head>
-    <body>
-        <p>
-        <legend>Anrede:
-        <label for="herr">Herr</label>
-        <input type="radio" id="herr" name="Herr" value="herr">
-        <label for="frau">Frau</label>
-        <input type="radio" id="frau" name="Frau" value="frau">
-        </legend><br>
+            </style>
+        </head>
 
-        <label for="Vorname">Vorname:</label>
-        <input type="text" id="name" name="name" autofocus placeholder="Max"></input><br>
-        <label for="Nachname">Nachname:</label>
-        <input type="text" id="name" name="name" placeholder="Muster"></input><br>
+        <body>
+            <div class="text container">
 
-        <label for="datum">Datum:</label>
-        <input type="date" id="datum" name="datum" min="tt.mm.jjjj"></input><br>
+    <div class="row">
+        <div class="col-md-2">
+            <span>Anrede:</span>
+        </div>
+            <div class="col-md-5">
+            <input type="radio" id="herr" name="Anrede">
+            Herr</div>
+            <div class="col-md-5">
+            <input type="radio" id="frau" name="Anrede">
+            Frau</div>
+    </div>
+            <br>
 
-        <label for="strasse">Strasse:</label>
-        <input type="text" id="strasse" name="strasse" placeholder="Musterstrasse 12"></input><br>
+        <div class="row">
+            <div class="col-md-2">
+                Vorname:</div>
+            <div class="col-md-10">
+                <input type="text" name="vname" autofocus placeholder="Max" class="form-control">
+            </div>
+        </div>
+                <br>
 
-        <label for="plz">PLZ:</label>
-        <input type="text" id="plz" name="plz" placeholder="8320"></input>
-        <label for="ort">Ort:</label>
-        <input type="text" id="ort" name="ort" placeholder="Fehraltorf"></input><br>
+        <div class="row">
+            <div class="col-md-2">
+                Nachname:</div>
+            <div class="col-md-10">
+                <input type="text" name="nname" placeholder="Muster" class="form-control">
+            </div>
+        </div>
+                <br>
 
-        Land:
-        <select name="country-names" id="country-names">
-        <option value="wählen">Wählen Sie ein Land aus</option>
-        <option value="schweiz">Schweiz</option>
-        <option value="deutschland">Deutschland</option>
-        <option value="österreich">Österreich</option>
-        <option value="frankreich">Frankreich</option>
-        <option value="italien">Italien</option>
-        <option value="anderes">Anderes Land</option>
-        </select>
-        </p>
-    </body>
-</html>
+        <div class="row">
+            <div class="col-md-2">
+            Datum:</div>
+            <div class="col-md-10">
+            <input type="date" id="datum" name="Datum" value="tt.mm.jjjj" class="form-control">
+            </div>
+        </div>
+                <br>
+
+        <div class="row">
+            <div class="col-md-2">
+            Strasse:</div>
+            <div class="col-md-10">
+                <input type="text" id="strasse" name="Strasse" placeholder="Musterstrasse 12" class="form-control">
+            </div>
+        </div>
+                <br>
+
+        <div class="row">
+            <div class="col-md-2">
+            PLZ:</div>
+            <div class="col-md-2">
+                <input type="text" id="plz" name="PLZ" placeholder="8320" class="form-control">
+            </div>
+            <div class="col-md-3">
+            Ort:</div>
+            <div class="col-md-5">
+                <input type="text" id="ort" name="Ort" placeholder="Fehraltorf" class="form-control">
+            </div>
+        </div>
+                <br>
+
+            <div class="row">
+                <div class="col-md-2">
+                    Land:</div>
+                    <div class="col-md-10"> 
+            <select name="countrys" id="countrys" class="form-select">
+                <option value="wählen">Wählen Sie ein Land aus</option>
+                <option value="schweiz">Schweiz</option>
+                <option value="deutschland">Deutschland</option>
+                <option value="österreich">Österreich</option>
+                <option value="frankreich">Frankreich</option>
+                <option value="italien">Italien</option>
+                </div>
+            </div>
+                
+            </select>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+            </div>
+        </body>
+    </html>
