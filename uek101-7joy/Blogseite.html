@@ -13,7 +13,7 @@
                 margin: 0;
                 font-family: Arial, Helvetica, sans-serif;
             }
-            
+
             /* Style the header */
             header {
                 height: 1920px;
@@ -27,51 +27,99 @@
                 align-items: center;
                 text-align: center;
                 font-family: fantasy;
-                font-size: 30em;
+                font-size: 5em;
                 color: white;
             }
             
-            /* Style the buttons */
+            /* Style the nav-buttons */
             nav {
                 float: top;
-                width: 30%;
                 width: 100%;
-                height: 70px;
+                height: 100px;
                 background: rgb(173, 0, 133);
                 font-family: fantasy;
+                font-size: 2em;
                 color: white;
                 text-align: center;
                 padding: 15px;
             }
-            .navbtn {
-                margin: -5px;
-                padding: 20px;
-            }
-            a {
-                font-family: Arial, Helvetica, sans-serif;
+             nav ul {
+                list-style-type: none;
+                padding: 0;
+             }
+             nav ul a {
+                font-family: fantasy;
                 font-size: 2em;
                 color: white;
                 text-decoration: none;
+                justify-content: center;
+                align-items: center;
             }
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-            article {
-                float: left;
+            .navbtn {
+                margin: 20px;
                 padding: 20px;
-                width: 70%;
+            }
+
+            /* Style the Section */ 
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+                padding: 20px;
                 background-color: rgb(173, 0, 133);
-                height: 300px;
+                height: 2000px;
+                width: 100%;
+            }
+            section div h2 {
+                font-family: fantasy;
+                font-size: 2em;
+                color: rgb(173, 0, 133);
+                text-align: center;
+                margin: 20px;
+                padding: 100px;
+                width: 100%;
+            }
+            section div p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                color: rgb(173, 0, 133);
+                margin: 100px;
+                margin-top: -50px;
+                padding: -50px;
+            }
+            .AboutMe {
+                background-color: white;
+                border-radius: 70px;
+                width: 70%;
+                height: 500px;
+                text-align: center;
+            }
+
+            .Impressum {
+                background-color: white;
+                border-radius: 70px;
+                width: 70%;
+                height: 500px;
+                text-align: center;
+            }
+            
+            .Funfacts {
+                background-color: white;
+                border-radius: 70px;
+                width: 70%;
+                height: 500px;
+                text-align: center;
             }
 
             /* Style the footer*/
             footer {
                 background-color: rgb(173, 0, 133);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 40px;
+                font-family: fantasy;
+                font-size: 2em;
                 color: white;
-                position: central;
+                text-align: center;
             }
          </style>
     </head>
@@ -87,8 +135,29 @@
             </ul>
         </nav>
 
+        <section>
+            <div class="AboutMe">
+                <h2>ABOUT ME</h2>
+                <p>Herzlich Willkommen auf meiner persönlichen Website!<br>
+                    Ich heisse Joy Ann Lehmann und bin im 18. Lebensjahr. Im August 2026 habe ich die Lehre Mediatikerin bei der Noser Young in Worblaufen gestartet.
+                    Zwischen der obligatorischen Schule und dem Lehrstart als Mediamatikerin habe ich 2 Zwischejahre (gestalterische Vorkurs, Invres in Bern & Haushaltsjahr im Welschen) ausgelernt. 
+                </p>
+            </div>
+            <div class="Impressum">
+                <h2>IMPRESSUM</h2>
+                <p>Joy Ann Lehmann<br>
+                E-Mail: joy.lehmann@noseryoung.ch<br>
+            </p>
+            </div>
+            <div class="FunFacts">
+                <h2>FUN FACTS</h2>
+                <p>- Nach dem Welschenjahr wollte ich automatisch nur noch Französisch sprechen.<br>
+                - </p>
+            </div>
+        </section>
+
         <footer>
-            <p>...</p>
+            <p>. . .</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
